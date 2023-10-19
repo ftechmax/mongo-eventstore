@@ -5,7 +5,7 @@ namespace MongoEventStore;
 
 public static class DependencyInjectionRegistrationExtensions
 {
-    public static IServiceCollection AddMongoEventStore(this IServiceCollection collection, string databaseName = "MongoEventStore")
+    public static IServiceCollection AddMongoEventStore(this IServiceCollection collection, Action<EventStoreConfig>? config = null)
     {
         BsonClassMap.RegisterClassMap<EventData>();
         BsonClassMap.RegisterClassMap<DomainEvent>(i =>
@@ -15,7 +15,12 @@ public static class DependencyInjectionRegistrationExtensions
         });
 
         collection.AddScoped<IEventStore, EventStore>();
-        collection.AddSingleton(new EventStoreConfig(databaseName));
+        //collection.AddSingleton(new EventStoreConfig(databaseName));
+
+        if (config != null)
+        {
+            collection.Configure(config);
+        }
 
         return collection;
     }

@@ -25,7 +25,10 @@ namespace WebApplication1
             var connectionString = $"mongodb://safety-user:password@localhost:27017";
             builder.Services.AddSingleton<IMongoClient>(_ => new MongoClient(connectionString));
 
-            builder.Services.AddMongoEventStore();
+            builder.Services.AddMongoEventStore(config =>
+            {
+                config.DatabaseName = "AAAA";
+            });
 
             var app = builder.Build();
 
