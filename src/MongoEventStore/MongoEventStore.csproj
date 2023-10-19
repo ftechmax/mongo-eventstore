@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>10</LangVersion>
+    <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>MongoEventStore</AssemblyName>
+    <Product>MongoEventStore</Product>
+    <DocumentationFile>$(OutputPath)bin/$(Configuration)/$(TargetFramework)/$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.22.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageId>MongoEventStore</PackageId>
+    <Authors>ftechmax</Authors>
+    <Description>A high-performance, extensible argument validation library.</Description>
+    <Copyright>Copyright © 2023 ftechmax</Copyright>
+    <PackageProjectUrl>https://github.com/ftechmax/mongo-eventstore</PackageProjectUrl>
+    <PackageIcon>logo-64.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ftechmax/mongo-eventstore</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>argument parameter guard validation fluent contract assertion</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageOutputPath>../../artifacts/</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../logo-64.png" Pack="true" PackagePath="\" />
+    <None Include="../../LICENSE" Pack="true" PackagePath="\" />
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+	
+</Project>
