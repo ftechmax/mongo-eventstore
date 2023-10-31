@@ -1,5 +1,6 @@
 ﻿using MongoEventStore;
-using WebApplication1.Controllers;
+using MongoEventStore.Tester.DomainEvents;
+using MongoEventStore.Tester.Dtos;
 
 namespace WebApplication1
 {

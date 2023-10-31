@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Reference Include="MongoEventStore">
-      <HintPath>..\MongoEventStore\bin\Debug\net6.0\MongoEventStore.dll</HintPath>
+      <HintPath>..\..\src\MongoEventStore\bin\Debug\net6.0\MongoEventStore.dll</HintPath>
     </Reference>
   </ItemGroup>
 

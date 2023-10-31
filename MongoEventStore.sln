@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoEventStore", "src\MongoEventStore\MongoEventStore.csproj", "{217688DD-796D-4173-A89C-0E6414E36B7F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoEventStore.Tester", "src\MongoEventStore.Tester\MongoEventStore.Tester.csproj", "{C35D8B45-F922-415D-90E1-5E908624F256}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoEventStore.Tester", "tools\MongoEventStore.Tester\MongoEventStore.Tester.csproj", "{C35D8B45-F922-415D-90E1-5E908624F256}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

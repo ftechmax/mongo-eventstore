@@ -1,7 +1,7 @@
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using MongoEventStore;
-using WebApplication1.Controllers;
+using MongoEventStore.Tester.DomainEvents;
 
 namespace WebApplication1
 {
@@ -27,7 +27,7 @@ namespace WebApplication1
 
             builder.Services.AddMongoEventStore(config =>
             {
-                config.DatabaseName = "AAAA";
+                config.DatabaseName = "MongoEventStore";
             });
 
             var app = builder.Build();

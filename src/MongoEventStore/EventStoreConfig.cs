@@ -2,5 +2,5 @@
 
 public class EventStoreConfig
 {
-    public string DatabaseName { get; set; }
+    public string DatabaseName { get; set; } = "MongoEventStore";
 }
